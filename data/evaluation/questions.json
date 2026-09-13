@@ -1,0 +1,212 @@
+[
+  {
+    "id": "handbook-revision",
+    "question": "How often is the MScAC Student Handbook revised?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [2]}
+    ]
+  },
+  {
+    "id": "academic-director",
+    "question": "Who is the Academic Director for Professional Programs?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [3]}
+    ]
+  },
+  {
+    "id": "study-plan-deadline",
+    "question": "When is the first draft of the study plan due?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [5]}
+    ]
+  },
+  {
+    "id": "cs-enrolment-date",
+    "question": "When does enrolment in CS Fall and Winter courses begin?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [5]}
+    ]
+  },
+  {
+    "id": "fall-fee-deadline",
+    "question": "What is the payment deadline for unpaid Fall semester tuition and fees?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [5]}
+    ]
+  },
+  {
+    "id": "fee-deferral",
+    "question": "Can MScAC students generally defer their fees?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [6]}
+    ]
+  },
+  {
+    "id": "program-duration",
+    "question": "How long is the MScAC applied research program?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}
+    ]
+  },
+  {
+    "id": "minimum-technical-courses",
+    "question": "What is the minimum number of technical graduate courses all MScAC students must complete?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}
+    ]
+  },
+  {
+    "id": "minimum-course-grade",
+    "question": "What minimum grade counts as satisfactory academic progress in each course?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}
+    ]
+  },
+  {
+    "id": "internship-progression",
+    "question": "What must students do in the first two semesters before proceeding to the internship?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}
+    ]
+  },
+  {
+    "id": "applied-math-requirements",
+    "question": "What Computer Science and Mathematics course requirements apply to the Applied Mathematics concentration?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [8]}
+    ]
+  },
+  {
+    "id": "ai-core-requirements",
+    "question": "How many core Artificial Intelligence courses are required for the Artificial Intelligence concentration?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [8]}
+    ]
+  },
+  {
+    "id": "cs-concentration-requirements",
+    "question": "How many course groups must Computer Science concentration students cover?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [9]}
+    ]
+  },
+  {
+    "id": "data-science-required-course",
+    "question": "Which STA course is required for the Data Science concentration?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [9]}
+    ]
+  },
+  {
+    "id": "quantum-requirements",
+    "question": "What Physics course requirement applies to the Quantum Computing concentration?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [10]}
+    ]
+  },
+  {
+    "id": "internship-approval",
+    "question": "Can a student accept an internship offer before MScAC Partnerships approves it?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [12]}
+    ]
+  },
+  {
+    "id": "official-internship-offer",
+    "question": "When is an internship offer considered official by the program?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [13]}
+    ]
+  },
+  {
+    "id": "report-signoff",
+    "question": "Who must sign off on the internship report?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [15]}
+    ]
+  },
+  {
+    "id": "final-report-deadline",
+    "question": "When must the final report and completion forms be sent to the MScAC Program Office?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [16]}
+    ]
+  },
+  {
+    "id": "degree-confirmation",
+    "question": "When will the MScAC degree be confirmed complete?",
+    "relevant_evidence": [
+      {"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [17]}
+    ]
+  },
+  {
+    "id": "accessibility-office-hours",
+    "question": "What are Accessibility Services office hours during the Fall and Winter terms?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [3]}
+    ]
+  },
+  {
+    "id": "accessibility-confidentiality",
+    "question": "On what basis may Accessibility Services share a student information with University of Toronto staff?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [4]}
+    ]
+  },
+  {
+    "id": "student-initiates-accommodations",
+    "question": "Who is responsible for initiating access to accommodations and services at U of T?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [12]}
+    ]
+  },
+  {
+    "id": "fall-registration-timing",
+    "question": "When should new students starting in the Fall ideally register with Accessibility Services?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [13]}
+    ]
+  },
+  {
+    "id": "registration-steps",
+    "question": "What are the three steps to register with Accessibility Services?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [19]}
+    ]
+  },
+  {
+    "id": "adhd-documentation",
+    "question": "What documentation is required for students registering with ADHD?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [21]}
+    ]
+  },
+  {
+    "id": "intake-form-time",
+    "question": "How much time should a student set aside to complete the online Student Intake Form?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [23]}
+    ]
+  },
+  {
+    "id": "accommodation-transfer-from-other-university",
+    "question": "Can accommodations from another university be transferred to U of T?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [28]}
+    ]
+  },
+  {
+    "id": "annual-renewal-date",
+    "question": "On what date do Accessibility Services accommodations deactivate each year?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [30]}
+    ]
+  },
+  {
+    "id": "academic-accommodations-standard",
+    "question": "Do students with accommodations still have to meet the same course standards as their peers?",
+    "relevant_evidence": [
+      {"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [31]}
+    ]
+  }
+]
