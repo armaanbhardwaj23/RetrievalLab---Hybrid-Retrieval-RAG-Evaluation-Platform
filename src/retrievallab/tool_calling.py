@@ -40,7 +40,7 @@ class ToolCallingAnswerGenerator:
             {"role": "user", "content": question},
         ]
         first_response = self._client.chat.completions.create(
-            model=self.model, temperature=0, messages=messages, tools=[SEARCH_TOOL],
+            model=self.model, temperature=0, max_tokens=128, messages=messages, tools=[SEARCH_TOOL],
             tool_choice={"type": "function", "function": {"name": "search_handbook"}},
         )
         tool_call = _single_search_call(first_response.choices[0].message)

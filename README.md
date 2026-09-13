@@ -7,13 +7,15 @@ infrastructure.
 
 ## Evaluation status
 
-The evaluation set now contains **30 page-labeled questions** across both supplied PDFs: 20 from the MScAC handbook and 10 from the Accessibility Services handbook. The expanded comparison has not yet been run, so RetrievalLab deliberately makes no current performance claim for it.
+On the 30-question, page-labeled set across both supplied PDFs (20 MScAC and 10 Accessibility Services questions), hybrid RRF reached `Recall@5 = 1.000` and `MRR = 0.950`. BM25 and dense retrieval each reached `Recall@5 = 0.967`; hybrid recovered the one missed case and ranked relevant evidence earlier overall.
 
-The earlier 20-question, MScAC-only result is retained as historical baseline only: hybrid RRF reached `MRR = 1.000`, versus `0.925` for dense and BM25; all reached `Recall@5 = 1.000`.
+| Strategy | Recall@5 | MRR | Mean retrieval latency |
+| --- | ---: | ---: | ---: |
+| BM25 | 0.967 | 0.900 | 4.2 ms |
+| Dense | 0.967 | 0.808 | 356.9 ms |
+| Hybrid RRF | 1.000 | 0.950 | 338.5 ms |
 
-Those figures are real measurements from one local run, but the corpus is small,
-the labels come from one handbook, and OpenRouter network latency varies; this
-is not a general performance claim.
+These are real measurements from one local run. The corpus and labeled set are small, and OpenRouter network latency varies, so they are not general performance claims. The results assess retrieval evidence only, not answer quality or citation correctness.
 
 ## Architecture
 
