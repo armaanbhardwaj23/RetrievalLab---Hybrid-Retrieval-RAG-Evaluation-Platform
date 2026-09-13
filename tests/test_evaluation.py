@@ -7,6 +7,7 @@ import pytest
 from retrievallab.evaluation import (
     EvaluationCase,
     RelevantEvidence,
+    analyze_retrieval,
     evaluate_retrieval,
     load_evaluation_cases,
 )
@@ -62,3 +63,21 @@ def test_load_evaluation_cases_uses_source_filename_and_pages(tmp_path: Path) ->
     assert cases[0].relevant_evidence == (
         RelevantEvidence("MScAC-Handbook.pdf", (7,)),
     )
+
+
+def test_retrieval_analysis_keeps_failures_and_ranked_results() -> None:
+    case = EvaluationCase(
+        case_id="courses",
+        question="What course is required?",
+        relevant_evidence=(
+            RelevantEvidence("MScAC-Handbook.pdf", (1,)),
+            RelevantEvidence("MScAC-Handbook.pdf", (2,)),
+        ),
+    )
+
+    analysis = analyze_retrieval([case], lambda _: [_result(2, 1), _result(3, 2)], k=2)
+
+    inspected_case = analysis.cases[0]
+    assert inspected_case.evidence_found == (False, True)
+    assert inspected_case.first_relevant_rank == 1
+    assert analysis.failed_cases == (inspected_case,)

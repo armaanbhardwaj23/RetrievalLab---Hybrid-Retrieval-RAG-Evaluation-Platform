@@ -113,3 +113,71 @@ def evaluate_retrieval(
         mrr=sum(reciprocal_ranks) / len(reciprocal_ranks),
         mean_latency_ms=sum(latencies_ms) / len(latencies_ms),
     )
+
+
+@dataclass(frozen=True, slots=True)
+class CaseAnalysis:
+    """The retrieved evidence and match outcome for one labeled question."""
+
+    case: EvaluationCase
+    results: tuple[RetrievalResult, ...]
+    evidence_found: tuple[bool, ...]
+    first_relevant_rank: int | None
+
+    @property
+    def has_missed_evidence(self) -> bool:
+        """Whether at least one labeled source location was absent from top-K."""
+
+        return not all(self.evidence_found)
+
+
+@dataclass(frozen=True, slots=True)
+class RetrievalAnalysis:
+    """Inspectable per-case outcomes for a retrieval run."""
+
+    cases: tuple[CaseAnalysis, ...]
+
+    @property
+    def failed_cases(self) -> tuple[CaseAnalysis, ...]:
+        """Return only cases with missing labeled evidence."""
+
+        return tuple(case for case in self.cases if case.has_missed_evidence)
+
+
+def analyze_retrieval(
+    cases: Sequence[EvaluationCase],
+    retrieve: Callable[[str], Sequence[RetrievalResult]],
+    *,
+    k: int = 5,
+) -> RetrievalAnalysis:
+    """Return per-question evidence matches so aggregate failures can be inspected."""
+
+    if not cases:
+        raise ValueError("At least one evaluation case is required.")
+    if k < 1:
+        raise ValueError("k must be at least 1.")
+
+    analyses: list[CaseAnalysis] = []
+    for case in cases:
+        results = tuple(retrieve(case.question))[:k]
+        evidence_found = tuple(
+            any(evidence.matches(result) for result in results)
+            for evidence in case.relevant_evidence
+        )
+        first_relevant_rank = next(
+            (
+                result.rank
+                for result in results
+                if any(evidence.matches(result) for evidence in case.relevant_evidence)
+            ),
+            None,
+        )
+        analyses.append(
+            CaseAnalysis(
+                case=case,
+                results=results,
+                evidence_found=evidence_found,
+                first_relevant_rank=first_relevant_rank,
+            )
+        )
+    return RetrievalAnalysis(cases=tuple(analyses))
