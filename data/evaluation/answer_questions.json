@@ -1,0 +1,142 @@
+[
+  {
+    "id": "registration-steps-answer",
+    "category": "procedure",
+    "question": "What are the three steps to register with Accessibility Services?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [19]}],
+    "required_phrases": ["documentation", "Student Intake Form", "intake appointment"]
+  },
+  {
+    "id": "office-hours-answer",
+    "category": "lookup",
+    "question": "What are Accessibility Services office hours during the Fall and Winter terms?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [3]}],
+    "required_phrases": ["9:00", "5:00", "Monday through Friday"]
+  },
+  {
+    "id": "program-duration-answer",
+    "category": "lookup",
+    "question": "How long is the MScAC applied research program?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}],
+    "required_phrases": ["16-month"]
+  },
+  {
+    "id": "fee-deferral-answer",
+    "category": "policy",
+    "question": "Can MScAC students generally defer their fees?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [6]}],
+    "required_phrases": ["not", "defer"]
+  },
+  {
+    "id": "academic-director-answer",
+    "category": "lookup",
+    "question": "Who is the Academic Director for Professional Programs?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [3]}],
+    "required_phrases": ["Arvind Gupta"]
+  },
+  {
+    "id": "study-plan-deadline-answer",
+    "category": "date",
+    "question": "When is the first draft of the MScAC study plan due?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [5]}],
+    "required_phrases": ["June 15"]
+  },
+  {
+    "id": "technical-course-minimum-answer",
+    "category": "requirement",
+    "question": "What is the minimum number of technical graduate courses required for MScAC students?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}],
+    "required_phrases": ["four", "technical graduate courses"]
+  },
+  {
+    "id": "ai-core-courses-answer",
+    "category": "requirement",
+    "question": "How many core Artificial Intelligence courses are required in the MScAC AI concentration?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [8]}],
+    "required_phrases": ["two", "core"]
+  },
+  {
+    "id": "student-initiates-access-answer",
+    "category": "policy",
+    "question": "Who is responsible for initiating access to Accessibility Services accommodations?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [12]}],
+    "required_phrases": ["Students", "responsible"]
+  },
+  {
+    "id": "fall-registration-timing-answer",
+    "category": "date",
+    "question": "When should new students starting in the Fall ideally register with Accessibility Services?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [13]}],
+    "required_phrases": ["mid-July"]
+  },
+  {
+    "id": "adhd-documentation-answer",
+    "category": "requirement",
+    "question": "What documentation is required for students registering with ADHD?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [21]}],
+    "required_phrases": ["Certificate of Disability", "psychoeducational"]
+  },
+  {
+    "id": "annual-renewal-answer",
+    "category": "date",
+    "question": "When do Accessibility Services accommodations deactivate each year?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [30]}],
+    "required_phrases": ["April 30"]
+  },
+  {
+    "id": "academic-standard-answer",
+    "category": "policy",
+    "question": "Do students with academic accommodations still need to meet the same course standards as their peers?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [31]}],
+    "required_any_phrases": [["same level", "same course standards", "essential academic requirements"]]
+  },
+  {
+    "id": "program-and-internship-answer",
+    "category": "multi_part",
+    "question": "How long is the MScAC program, and how long is its applied research internship?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [7]}],
+    "required_phrases": ["16-month", "eight months"]
+  },
+  {
+    "id": "no-answer-mascot",
+    "category": "no_answer",
+    "question": "What is the University of Toronto mascot?",
+    "expected_evidence": [],
+    "expects_abstention": true
+  },
+  {
+    "id": "cs-enrolment-date-answer",
+    "category": "date",
+    "question": "When does enrolment in MScAC Computer Science Fall and Winter courses begin?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [5]}],
+    "required_phrases": ["August 5"]
+  },
+  {
+    "id": "final-report-deadline-answer",
+    "category": "date",
+    "question": "When must the final internship report and completion forms be sent to the MScAC Program Office?",
+    "expected_evidence": [{"source_filename": "MScAC-Handbook-2026-27-final-version-2.pdf", "page_numbers": [16]}],
+    "required_phrases": ["December 10", "2027"]
+  },
+  {
+    "id": "intake-form-duration-answer",
+    "category": "procedure",
+    "question": "How much time should a student set aside to complete the online Student Intake Form?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [23]}],
+    "required_phrases": ["30 minutes"]
+  },
+  {
+    "id": "late-registration-answer",
+    "category": "policy",
+    "question": "Can a student still register with Accessibility Services after missing the registration deadline?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [18]}],
+    "required_phrases": ["still register"]
+  },
+  {
+    "id": "external-transfer-answer",
+    "category": "policy",
+    "question": "Can accommodations from another university be transferred directly to U of T?",
+    "expected_evidence": [{"source_filename": "AS-Graduate-and-Professional-Program-Student-Handbook.pdf", "page_numbers": [28]}],
+    "required_any_phrases": [["do not transfer", "cannot be transferred directly", "not directly transferable"]]
+  }
+]

@@ -75,7 +75,7 @@ class OpenRouterAnswerGenerator:
                     "role": "system",
                     "content": (
                         "Answer only from the supplied sources. If the sources do not "
-                        "establish an answer, say so. Cite each factual claim with its "
+                        "establish an answer, begin exactly with: Insufficient evidence in the retrieved sources. Cite each factual claim with its "
                         "source label, such as [S1]."
                     ),
                 },
