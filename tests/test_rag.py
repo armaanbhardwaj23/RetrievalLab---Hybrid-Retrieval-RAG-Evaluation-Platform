@@ -47,6 +47,7 @@ def test_answer_generation_labels_sources_for_citation() -> None:
     assert answer.text == "Answer. [S1]"
     assert answer.citations[0].label == "S1"
     assert "[S1] guide.pdf, page 7, chunk guide:0007" in endpoint.request["messages"][1]["content"]
+    assert "Insufficient evidence in the retrieved sources" in endpoint.request["messages"][0]["content"]
 
 
 def test_answer_generation_requires_retrieved_sources() -> None:
